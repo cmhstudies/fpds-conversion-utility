@@ -81,18 +81,18 @@ conversion-utility xml_archive sqlite3_target
 ```
 
 Multiple XML archives can be combined into a single SQLite database by invoking 
-the `--append` flag:
+the `-a` flag:
 
 ```shell
 ./conversion-utility archive1.xml bundle.sqlite3
-./conversion-utility --append archive2.xml bundle.sqlite3
-./conversion-utility --append archive3.xml bundle.sqlite3
+./conversion-utility -a archive2.xml bundle.sqlite3
+./conversion-utility -a archive3.xml bundle.sqlite3
 ```
 
-And an existing database can be overwritten by invoking the `--overwrite` flag:
+And an existing database can be overwritten by invoking the `-o` flag:
 
 ```shell
-./conversion-utility --overwrite archive.xml db.sqlite3
+./conversion-utility -o archive.xml db.sqlite3
 ``` 
 
 #### Performance
